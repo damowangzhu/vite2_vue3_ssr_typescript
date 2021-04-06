@@ -6,15 +6,12 @@ import { isPromise } from './utils';
 import createRouter from './router';
 import { sync } from 'vuex-router-sync';
 
-// import toast from '@/plugins/toast';
-
 const router = createRouter();
 const store = createStore();
 sync(store, router);
 
 const app = createSSRApp(App);
 app.use(router).use(store);
-// app.use(toast);
 
 router.beforeResolve((to, from, next) => {
   let diffed = false;

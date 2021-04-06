@@ -10,6 +10,8 @@
 </template>
 
 <script lang="ts">
+// import request from './utils/request';
+// request.get('/test');
 export default {};
 </script>
 <style scoped lang="scss">
