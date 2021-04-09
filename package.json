@@ -5,7 +5,7 @@
     "dev": "node server/server-env ",
     "build": "yarn build:client && yarn build:server",
     "build:client": "vue-tsc --noEmit && vite build --ssrManifest --outDir dist/client",
-    "build:server": "vue-tsc --noEmit && vite build --ssr src/entry-server.js --outDir dist/server",
+    "build:server": "vite build --ssr src/entry-server.js --outDir dist/server",
     "serve": "node server/server.js",
     "preview": "yarn build && yarn serve"
   },

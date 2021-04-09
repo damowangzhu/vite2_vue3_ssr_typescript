@@ -14,7 +14,7 @@
 // request.get('/test');
 export default {};
 </script>
-<style scoped lang="scss">
+<style lang="scss">
 .page {
   min-height: calc(100vh - 44px);
   padding-top: 25px;
